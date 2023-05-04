@@ -1,0 +1,207 @@
+.info__container {
+    h4 {
+        margin-top: 0.25rem;
+        margin-bottom: 0.75rem;
+        font-weight: 500;
+        font-size: 1rem;
+    }
+}
+
+
+
+.info__tableCell {
+    width: 700px;
+}
+
+
+@media screen {
+    .info__print {
+        display: none;
+    }
+
+    .info__screen {
+        display: block;
+    }
+}
+
+@media print {
+    h1, h2, h3, h4, h5, h6 {
+        page-break-after: avoid;
+        page-break-inside: avoid;
+    }
+    img {
+        page-break-inside: avoid;
+        page-break-after: avoid;
+    }
+    blockquote, pre {
+        page-break-inside: avoid;
+    }
+    ul, ol, dl {
+        page-break-before: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+    tfoot {
+        display: table-footer-group;
+    }
+
+    .info__semesterBlock {
+        page-break-inside: avoid !important;
+        margin-bottom: 40px;
+    }
+
+    .info__mainTable {
+        page-break-inside: auto;
+        page-break-before: avoid;
+
+        th {
+            text-align: center;
+        }
+
+        .info__tableSemestersRow {
+            margin-bottom: 0px;
+        }
+    }
+
+    @page {
+        margin-top: 1cm;
+        margin-left: 2cm;
+        margin-bottom: 1cm;
+        margin-right: 2cm;
+        size: A4;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    #root {
+        padding: 0;
+        /* width: 21cm;
+        height: 29.7cm;  */
+        position: relative;
+      }
+    
+
+    .info__print {
+        display: block;
+    }
+
+    .info__screen {
+        display: none;
+    }
+
+    .slide__container {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        box-shadow: none !important;
+    }
+
+    .css-11mde6h-MuiPaper-root {
+        box-shadow: none !important;
+    }
+
+    .slide__header {
+        display: none;
+    }
+
+    .layout__content {
+        display: none;
+    }
+
+    .Navbar.Navbar__Container {
+        visibility: hidden;
+    }
+
+    .Sidebar__Container .Sidebar__Drawer {
+        display: none;
+    }
+
+    .container-print {
+        display: block;
+    }
+
+    .container-screen {
+        display: none;
+    }
+
+    img {
+        width: 500px;
+        text-align: center;
+    }
+
+    .page-header,
+    .page-header-space {
+        height: 240px;
+    }
+
+    .page-footer,
+    .page-footer-space {
+        height: 20px;
+    }
+
+    .page-header {
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .page-footer {
+        position: fixed;
+        bottom: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .page {
+        page-break-after: always;
+    }
+    
+    ul {
+        list-style: disc !important;
+        margin-left: 40px !important;
+    }
+    
+    .text-content {
+        margin-top: 70px;
+    }
+}
+
+.info__block {
+    border-top: 1px solid map-get($color-map, $key: border);
+    border-bottom: 1px solid map-get($color-map, $key: border);
+}
+
+.info__line {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 24px;
+    h5 {
+        margin-left: 15px;
+    }
+    p {
+        margin-left: 5px;
+        font-size: 16px;
+    }
+}
+
+.line {
+    display: grid;
+    margin: 4px 0px 4px 0px;
+    span {
+        display: flex;
+        align-items: baseline;
+        h5 {
+            margin-right: 8px;
+            margin-bottom: 0px;
+        }
+    }
+}
+
+.line2 {
+    grid-template-columns: 1fr 1fr;
+}

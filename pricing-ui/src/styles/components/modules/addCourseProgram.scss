@@ -1,0 +1,88 @@
+@import '../../colors.scss';
+
+.table__courseProgramHeadArticles {
+    display: grid !important;
+    grid-template-columns: 4% 4% 20% 7% 10% 10% 10% 7% 10% 7% 7% 4%;
+    background-color: map-get($color-map, primary) !important;
+    & .table__courseProgramCell .table__courseCellRight {
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+    }
+}
+
+.table__courseProgramBodyArticles {
+    display: grid !important;
+    grid-template-columns: 4% 4% 20% 7% 10% 10% 10% 7% 10% 7% 7% 4%;
+    & .table__courseProgramCell .table__courseCellRight {
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+    }
+}
+
+.table__courseProgramCell {
+    color: white !important;
+    font-weight: 500 !important;
+}
+.table__courseProgramCellBody {
+    color: rgb(10, 10, 10) !important;
+    display: grid !important;
+    align-content: center !important;
+}
+
+.table__courseProgramHeadLastFiles {
+    display: grid !important;
+    grid-template-columns: 25% 25% 25% 25%;
+    background-color: map-get($color-map, primary) !important;
+    & .table__courseProgramCell .table__courseCellRight {
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+    }
+}
+
+.table__courseProgramBodyLastFiles {
+    display: grid !important;
+    grid-template-columns: 25% 25% 25% 25%;
+    & .table__courseProgramCell .table__courseCellRight {
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+    }
+}
+
+.table__massValidationSearchHeadLastFiles {
+    display: grid !important;
+    grid-template-columns: 8% 32% 20% 15% 15% 10%;
+    background-color: map-get($color-map, primary) !important;
+    margin-top: 1rem;
+    & .table__massValidationSearchCell .table__courseCellRight {
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+    }
+}
+
+.table__massValidationSearchBodyLastFiles {
+    display: grid !important;
+    grid-template-columns: 8% 32% 20% 15% 15% 10%;
+    & .table__massValidationSearchCell .table__courseCellRight {
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+    }
+}
+
+.table_HeadFileErrors {
+    display: grid !important;
+    grid-template-columns: 30% 10% 10% 20% 10% 10% 10%;
+    background-color: map-get($color-map, primary) !important;
+    & .table__courseProgramCell .table__courseCellRight {
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+    }
+}
+
+.table_BodyFileErrors {
+    display: grid !important;
+    grid-template-columns: 30% 10% 10% 20% 10% 10% 10%;
+    & .table__courseProgramCell .table__courseCellRight {
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+    }
+}

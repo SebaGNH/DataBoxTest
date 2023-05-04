@@ -1,0 +1,68 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+    session:
+      cookie:
+        name: PRICINGAUTH2SESSION
+  compression:
+    enabled: true
+    mime-types: application/json,application/xml,text/html,text/xml,text/plain
+    min-response-size: 32KB
+
+
+logging:
+  level:
+    org.springframework.security: INFO
+    org.springframework.web: DEBUG
+    org.hibernate.SQL: TRACE
+    org.hibernate.type.descriptor.sql: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+
+pricing-ues21-backend-dev:
+  oauth.server: ${PRICING_OAUTH_SERVER:http://ecampus2-trimix.uesiglo21.edu.ar:8080}
+  oauth.clientId: ${PRICING_OAUTH_CLIENT_ID_BACKEND:655794445935973}
+  oauth.clientsecret: ${PRICING_OAUTH_CLIENT_SECRET_BACKEND:41842f8308acf5683dbc685b030455bf}
+
+oauth:
+  retrofit:
+    oauthUrl: ${pricing-ues21-backend-dev.oauth.server}/menu/api/oauth2/
+    clientid: ${pricing-ues21-backend-dev.oauth.clientId}
+    clientsecret: ${pricing-ues21-backend-dev.oauth.clientsecret}
+
+security:
+  oauth2:
+    client:
+      client-id: ${pricing-ues21-backend-dev.oauth.clientId}
+      client-secret: ${pricing-ues21-backend-dev.oauth.clientsecret}
+      accessTokenUri: ${pricing-ues21-backend-dev.oauth.server}/menu/api/oauth2/token
+      userAuthorizationUri: ${pricing-ues21-backend-dev.oauth.server}/menu/api/oauth2/authorize
+      token-name: oauth_token
+      authentication-scheme: query
+      client-authentication-scheme: form
+    resource:
+      userInfoUri: ${pricing-ues21-backend-dev.oauth.server}/menu/api/oauth2/user
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  jpa:
+    show-sql: true
+    hibernate:
+      use-new-id-generator-mappings: false
+  mvc:
+      pathmatch:
+        matching-strategy: ant_path_matcher
+
+service:
+  name: ${PRICING_SERVICE_NAME:pricing-backend-dev}
+  instance: ${PRICING_HOSTNAME:http://localhost:8088}
+
+springdoc:
+  swagger-ui:
+    oauth:
+      client-id: ${pricing-ues21-backend-dev.oauth.clientId}
+      client-secret: ${pricing-ues21-backend-dev.oauth.clientsecret}
+      realm: pricing-ues21-backend-dev-api-realm
+      app-name: pricing-ues21-backend-dev-api
+      use-basic-authentication-with-access-code-grant: false
+      scope-separator: ', '

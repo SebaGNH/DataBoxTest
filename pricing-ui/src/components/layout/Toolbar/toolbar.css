@@ -1,0 +1,60 @@
+.Sidebar__Container .Sidebar__Drawer > div {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    background: rgb(255, 255, 255);
+}
+.sidebar__list {
+    padding: 3.5rem 1rem 1rem !important;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    z-index: 10002;
+}
+.sidebar__list a {
+    margin-top: 20px !important;
+}
+.sidebar__list li a {
+    border-radius: 50% !important;
+}
+
+.Sidebar__Container .Sidebar__Drawer:not(.Sidebar__Drawer--open) .Sidebar__Drawer__List__Item__Text {
+    display: none;
+}
+
+.Sidebar__Drawer__List__Item,
+.Sidebar__Drawer__List__Item > * {
+    transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+    height: 44px;
+    width: 44px !important;
+    border-radius: 50%;
+    align-content: center;
+}
+
+.Sidebar__Drawer__List__Item.active,
+.Sidebar__Drawer__List__Item.active:focus,
+.Sidebar__Drawer__List__Item.active:hover {
+    transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+    border-radius: 50%;
+    background: #00a98f;
+    color: white;
+    height: 44px;
+    width: 44px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.Sidebar__Drawer__List__Item.active > * {
+    color: white;
+}
+.Sidebar__Drawer__List__Item .Sidebar__Drawer__List__Item__Icon svg {
+    transition: transform 0.3s ease-in-out;
+}
+
+.Sidebar__Drawer__List__Item.active .Sidebar__Drawer__List__Item__Icon svg {
+    transform: scale(1, 1);
+}

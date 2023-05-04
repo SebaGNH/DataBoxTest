@@ -1,0 +1,31 @@
+.content_bulk-load-validation {
+    margin-bottom: 10px;
+    margin-top: 20px;
+    .module_title {
+        font-size: 1.2rem;
+        letter-spacing: 0.5px;
+        font-weight: bold;
+    }
+    .module_subtitle1 {
+        color: #999;
+        font-size: 1rem;
+        letter-spacing: 0.5px;
+    }
+}
+.content_mass_validation_load {
+    margin-bottom: 30px;
+    .module_title {
+        font-size: 1.2rem;
+        letter-spacing: 0.5px;
+        font-weight: bold;
+    }
+    .module_subtitle1 {
+        color: #999;
+        font-size: 1rem;
+        letter-spacing: 0.5px;
+    }
+}
+
+.filter_bulk-load__line_4 {
+    grid-template-columns: 12% 34% 26% 26%;
+}

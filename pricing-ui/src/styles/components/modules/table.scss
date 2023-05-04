@@ -1,0 +1,397 @@
+@import '../../colors.scss';
+
+.MuiTable-root {
+    border-collapse: separate !important;
+    border-spacing: 2px 2px !important;
+}
+
+.MuiTableRow-root {
+    border-radius: 5px;
+}
+
+.MuiTableCell-root {
+    border: 0px !important;
+}
+.table__price_list {
+    max-width: 1100px;
+    min-width: 400px;
+    width: 100%;
+    box-shadow: none !important;
+    padding-top: 1rem !important;
+    display: flex;
+    justify-content: center;
+}
+
+.table__price_list .table__courseProgramHeadArticles .MuiTableCell-root {
+    display: flex;
+    align-items: center;
+    font-weight: 500 !important;
+}
+
+.table__price_list .table__courseProgramHeadArticles .MuiTableCell-root:first-child {
+    padding-left: 0.5rem !important;
+}
+
+.table__programs {
+    max-width: 1100px;
+    min-width: 400px;
+    width: 100%;
+    box-shadow: none !important;
+    padding-top: 1rem !important;
+    display: flex;
+    justify-content: center;
+}
+
+.table__semesters {
+    max-width: 1500px;
+    min-width: 400px;
+    width: 100%;
+    box-shadow: none !important;
+    padding-top: 1rem !important;
+    display: flex;
+    justify-content: center;
+}
+
+.table__body {
+    max-width: 1100px;
+    min-width: 400px;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid rgba(224, 224, 224, 1);
+    overflow: hidden;
+}
+
+.table__bodySemesters {
+    max-width: 1500px;
+    min-width: 400px;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid rgba(224, 224, 224, 1);
+}
+
+.table__body2 {
+    max-width: 1100px;
+    min-width: 400px;
+    width: 100%;
+    background-color: map-get($color-map, $key: light_gray);
+    border: 1px solid rgba(224, 224, 224, 1);
+    border-spacing: 0px 0px !important;
+}
+
+.table__mainRow {
+    border-collapse: separate !important;
+    border-spacing: 0px 0px !important;
+}
+
+.table__row {
+    max-width: 1100px !important;
+    min-width: 400px !important;
+    // width: 100%;
+    // padding: 0.5rem;
+    // display: flex !important;
+    // align-items: center;
+    // justify-content: space-between;
+    // flex-direction: row;
+}
+
+.table__rowCourseExpandable {
+    max-width: 1500px !important;
+    min-width: 400px !important;
+    width: 100%;
+    padding: 0.5rem;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.table__row2 {
+    max-width: 1100px !important;
+    min-width: 400px !important;
+    width: 100%;
+    border-radius: 0px;
+    display: grid !important;
+    grid-template-columns: 3.8% 1.2% 82% 13%;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    align-items: center;
+}
+
+.table__rowCourse {
+    max-width: 1500px !important;
+    min-width: 400px !important;
+    width: 100% !important;
+    border-radius: 0px;
+    display: grid !important;
+    grid-template-columns: 5% 60% 20% 12%;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    align-items: center;
+    border-top: 0.5px solid #ababab66;
+}
+
+.table__cell {
+    border: 0px !important;
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+    padding-top: 0.3rem !important;
+    padding-bottom: 0rem !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table__cellRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.table__cellAux {
+    padding: 0px !important;
+}
+
+.table__head {
+    max-width: 1100px !important;
+    min-width: 400px !important;
+    width: 100% !important;
+    border-radius: 4px !important;
+    color: map-get($color-map, $key: white) !important;
+    background-color: map-get($color-map, primary-light) !important;
+    display: flex !important;
+    justify-content: space-between;
+}
+
+.table__controlCell {
+    display: flex !important;
+    flex-direction: row-reverse !important;
+}
+.table__syllabusControls {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.table__controls {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 2px 7px 2px 0px;
+
+    .table__control {
+        min-width: 35px !important;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        margin-left: 5px;
+        margin-right: 5px;
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.04);
+        }
+    }
+}
+
+.table__programControls {
+    height: 100px;
+    padding: 0px 0px 0px 0px;
+    background-color: map-get($color-map, $key: medium_gray2);
+    display: grid;
+}
+
+.table__programControlsRow1 {
+    float: left;
+    padding: 5px 5px 0px 8px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    color: map-get($color-map, $key: mine-shaft);
+    grid-template-columns: 5fr 2fr;
+}
+
+.table__programControlsRow2 {
+    float: left;
+    padding: 5px 5px 0px 8px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    color: map-get($color-map, $key: mine-shaft);
+    grid-template-columns: 5fr 2fr;
+}
+
+.table__syllabusHeader {
+    background-color: map-get($color-map, $key: medium_gray);
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+
+    h5 {
+        font-weight: 600;
+    }
+    p {
+        font-weight: 400;
+    }
+}
+
+.table__programTitle {
+    display: flex !important;
+    font-family: Montserrat, sans-serif !important;
+    font-size: 1rem !important;
+    color: map-get($color-map, $key: primary) !important;
+    flex-direction: row !important;
+    overflow: hidden;
+}
+
+.table__description {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+
+    margin-right: 4;
+    max-width: 95%;
+}
+
+.table__programCode {
+    color: map-get($color-map, $key: gray);
+}
+
+.table__syllabusContent {
+    font-size: 15px;
+    font-weight: 400;
+    height: 30px;
+    color: #6a6a6a;
+    align-items: center;
+    padding: 0rem 0rem 0rem 0.5rem !important;
+}
+
+.table__courseContent {
+    font-size: 15px;
+    font-weight: 400;
+    height: 50px;
+    color: #6a6a6a;
+    display: flex !important;
+    align-items: center !important;
+    padding: 0rem 0rem 0rem 1rem !important;
+}
+
+.table__syllabusSeparator {
+    padding: 0rem 0rem 0rem 0rem !important;
+}
+
+.table__programDecan {
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+.table__courseRow1 {
+    display: grid !important;
+    grid-template-columns: 10% 1% 20% 1% 37% 30%;
+    background-color: map-get($color-map, $key: medium_gray2);
+    border-radius: 0;
+    & .table__courseCell .table__courseCellRight {
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+    }
+}
+
+.table__courseRow2 {
+    display: grid !important;
+    grid-template-columns: 10% 1% 20% 1% 37% 30%;
+    background-color: map-get($color-map, $key: grid-template-columns);
+    border-radius: 0;
+}
+
+.table__courseRow4 {
+    display: grid !important;
+    grid-template-columns: 2% 35% 1% 20% 1% 8% 1% 5% 1% 20%;
+    background-color: map-get($color-map, $key: medium_gray2);
+    border-radius: 0;
+    & .table__courseCell .table__courseCellRight {
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+    }
+}
+
+.table__courseRow5 {
+    display: grid !important;
+    grid-template-columns: 2% 35% 1% 20% 1% 8% 1% 5% 1% 20%;
+    border-radius: 0;
+    & .table__courseCell .table__courseCellRight {
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+    }
+}
+
+.table__courseRow6 {
+    display: grid !important;
+    grid-template-columns: 20% 1% 40% 1% 30% 5%;
+    background-color: map-get($color-map, $key: medium_gray2);
+    border-radius: 0;
+    & .table__courseCell .table__courseCellRight {
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+    }
+}
+
+.table__courseRow7 {
+    display: grid !important;
+    grid-template-columns: 20% 1% 40% 1% 30% 5%;
+    border-radius: 0;
+    & .table__courseCell .table__courseCellRight {
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+    }
+}
+
+.table__courseRowHead {
+    display: grid !important;
+    grid-template-columns: 100%;
+    background-color: map-get($color-map, $key: light_gray);
+    border-radius: 0;
+}
+
+.table__courseProgramRow1 {
+    display: grid !important;
+    grid-template-columns: 10% 1% 10% 1% 10% 1% 35% 30%;
+    background-color: map-get($color-map, $key: medium_gray2);
+    border-radius: 0;
+}
+
+.table__courseProgramRow2 {
+    display: grid !important;
+    grid-template-columns: 10% 1% 10% 1% 10% 1% 35% 30%;
+    background-color: map-get($color-map, $key: light_gray);
+    border-radius: 0;
+}
+
+.table__courseControls {
+    display: grid !important;
+    grid-template-columns: 29% 23% 37%;
+}
+
+.table__courseCell {
+    display: flex !important;
+    padding: 15px 15px !important;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left !important;
+}
+
+.table__courseCellRight {
+    display: flex !important;
+    padding: 15px 15px;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: right !important;
+}
+
+.table__courseSeparator {
+    display: flex !important;
+    align-items: center !important;
+    padding: 0rem 0rem 0rem 0rem !important;
+}

@@ -1,0 +1,13 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - REPOSITORY_URI=930137440523.dkr.ecr.sa-east-1.amazonaws.com/pricing-ui
+      - aws s3 cp s3://dependency-check-report/dependency-check-latest-release.zip target/dependency-check-latest-release.zip
+      - unzip target/dependency-check*
+      - export PATH=target/dependency-check/bin:$PATH
+      - npm install -D owasp-dependency-check
+  build:
+    commands:
+      - npm run owasp
+      - aws s3 mv dependency-check-reports/dependency-check-report.html s3://dependency-check-report/pricing-ui/dependency-check-report.html

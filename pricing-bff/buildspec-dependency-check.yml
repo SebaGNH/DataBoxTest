@@ -1,0 +1,13 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - REPOSITORY_URI=930137440523.dkr.ecr.sa-east-1.amazonaws.com/pricing-bff
+      #- wget https://github.com/jeremylong/DependencyCheck/releases/download/v8.2.0/dependency-check-8.2.0-release.zip
+      - aws s3 cp s3://dependency-check-report/dependency-check-latest-release.zip target/dependency-check-latest-release.zip
+      - unzip target/dependency-check*
+      - export PATH=target/dependency-check/bin:$PATH
+  build:
+    commands:
+      - mvn org.owasp:dependency-check-maven:check
+      - aws s3 mv target/dependency-check-report.html s3://dependency-check-report/pricing-bff/dependency-check-report.html

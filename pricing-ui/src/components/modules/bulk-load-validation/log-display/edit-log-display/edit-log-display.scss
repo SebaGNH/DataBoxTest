@@ -1,0 +1,58 @@
+@import '../../../../../styles/colors.scss';
+
+.edit_log__line_1 {
+    grid-template-columns: 100%;
+}
+
+.edit_log__line_2 {
+    grid-template-columns: 50% 50%;
+}
+
+.edit_log__line_3 {
+    grid-template-columns: 35% 25% 40%;
+}
+
+.edit_log__line_20_80 {
+    grid-template-columns: 20% 80%;
+}
+
+.edit_log__line_30_70 {
+    grid-template-columns: 30% 70%;
+}
+
+.edit_log__line {
+    align-items: center;
+    display: grid;
+    margin-top: 15px;
+}
+
+.edit_Display_TypeStudent {
+    font-size: 1rem;
+    letter-spacing: 0.2px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.edit_Display_TypeStudent_options {
+    font-size: 0.4rem !important;
+    margin-left: 10px;
+}
+
+.edit_Display_Button {
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.edit_log_form {
+    border: 1px solid map-get($color-map, border);
+    border-radius: 10px;
+    display: grid;
+    padding: 1rem;
+}
+
+.edit_log_title {
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+    font-weight: bold !important;
+    color: map-get($color-map, primary);
+}

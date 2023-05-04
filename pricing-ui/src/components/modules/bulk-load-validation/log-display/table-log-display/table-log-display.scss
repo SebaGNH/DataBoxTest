@@ -1,0 +1,13 @@
+@import '../../../../../styles/colors.scss';
+
+.table__log_Display_Header {
+    display: grid !important;
+    grid-template-columns: 4% 4% 20% 7% 10% 10% 7% 7% 8% 8% 9% 3% 3%;
+    background-color: map-get($color-map, primary) !important;
+    align-items: center;
+}
+
+.table__log_Display_Body {
+    display: grid !important;
+    grid-template-columns: 4% 4% 20% 7% 10% 10% 7% 7% 9% 7% 9% 3% 3%;
+}

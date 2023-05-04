@@ -1,0 +1,13 @@
+{
+    "editor.defaultFormatter": "esbenp.prettier-vscode", // Prettier extension
+    "editor.formatOnPaste": false, // Disable automatic formatting on paste
+    "editor.formatOnType": false, // Disable automatic formatting on type
+    "editor.formatOnSave": true, // Enable automatic formatting on save
+    "editor.formatOnSaveMode": "file", // Format entire file on save
+    "javascript.preferences.quoteStyle": "single", // Use single quotes for all JavaScript
+    "typescript.preferences.quoteStyle": "single", // Use single quotes for all TypeScript
+    "prettier.tabWidth": 4, // Use 4 spaces for indentation
+    "prettier.singleQuote": true, // Use single quotes for strings
+    "prettier.trailingComma": "none", // Do not use trailing commas
+    "prettier.printWidth": 150 // Set print width to 150 characters
+}

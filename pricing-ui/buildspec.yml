@@ -1,0 +1,21 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - echo Build started on `date`
+      - REPOSITORY_URI=930137440523.dkr.ecr.sa-east-1.amazonaws.com/pricing-ui
+  build:
+    commands:
+      - echo Building the Docker image...
+      - docker build --build-arg SONAR_TOKEN --build-arg Project --build-arg Organization -t $REPOSITORY_URI .
+      - docker tag $REPOSITORY_URI:latest $REPOSITORY_URI:$CODEBUILD_BUILD_NUMBER
+  post_build:
+    commands:
+      - aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin $REPOSITORY_URI
+      - docker push $REPOSITORY_URI:$CODEBUILD_BUILD_NUMBER
+      - docker push $REPOSITORY_URI:latest
+      - printf '[{"name":"pricing-ui","imageUri":"%s"}]' $REPOSITORY_URI:$CODEBUILD_BUILD_NUMBER > imagedefinitions.json
+artifacts:
+  files: imagedefinitions.json
+  discard-paths: yes

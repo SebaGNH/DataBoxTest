@@ -1,0 +1,125 @@
+@import '../../colors.scss';
+
+// Este cambio es para cuando los labels sean nulos y no se muestren
+// En inputs con outline la linea se quiebra arriba y se ve feo
+fieldset {
+    legend {
+        width: unset;
+    }
+}
+
+.create__syllabuses {
+    max-width: 1100px;
+    min-width: 400px;
+    min-height: 600px;
+    width: 100%;
+    border: 1px solid map-get($color-map, border);
+    border-radius: 6px;
+    display: grid;
+    padding: 2rem 2rem 2rem 2rem;
+}
+
+.create__syllabuses__courses {
+    max-width: 1100px;
+    min-width: 400px;
+    width: 90%;
+    border: 1px solid map-get($color-map, border);
+    border-radius: 6px;
+    display: grid;
+    padding: 2rem 2rem;
+    padding-bottom: 0rem;
+
+    .create__syllabuses__header {
+        display: grid;
+        grid-template-columns: 7fr 1fr;
+        grid-gap: 1rem;
+        margin: 1rem;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .create__syllabuses__filters {
+        display: grid;
+        grid-template-columns: 6fr 4fr;
+        grid-gap: 1rem;
+        margin-left: -0.7rem;
+        margin-right: -0.2rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.create__controls {
+    align-items: center;
+    display: grid;
+}
+
+.create__controls div:nth-child(1) {
+    border-top: none !important;
+}
+
+.create__line {
+    border-top: 1px solid map-get($color-map, border);
+    min-height: 130px;
+}
+
+.create__title {
+    font-size: 1.2rem;
+    text-size-adjust: 60%;
+    margin-bottom: 0.5rem;
+    font-family: Montserrat, sans-serif !important;
+    color: map-get($color-map, $key: primary) !important;
+}
+
+.create__subTitle {
+    font-size: 1rem;
+    font-family: Montserrat, sans-serif !important;
+    color: map-get($color-map, $key: primary) !important;
+    padding: 15px 0px 10px 0px;
+}
+
+.create__textfield {
+    margin-bottom: 15px !important;
+    margin-top: 5px !important;
+    label {
+        font-size: unset !important;
+        color: #999;
+        font-weight: unset;
+        background-color: white;
+    }
+    .MuiInputBase-root {
+        font-size: unset;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+        fieldset {
+            border: 1px solid #e0e0e0;
+        }
+
+        input {
+            color: rgba(0, 0, 0, 0.42);
+        }
+    }
+}
+
+.create__textfieldControl {
+    margin: 5px !important;
+}
+
+.create__textfieldControlDuration {
+    margin: 0px !important;
+    margin-left: 10px !important;
+}
+
+.create__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: rox;
+    margin-left: auto;
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+}
+
+@media only screen and (max-width: 920px) {
+    .create__button {
+        width: 25%;
+    }
+}

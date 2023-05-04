@@ -1,0 +1,129 @@
+{
+    "buttons": {
+        "add": "Agregar",
+        "back": "Volver",
+        "backFile": "Volver al archivo",
+        "cancel": "Cancelar",
+        "confirm": "Confirmar",
+        "delete": "Eliminar",
+        "save": "Guardar",
+        "search": "Buscar",
+        "uploadFile": "Subir Archivo",
+        "finish": "Finalizar"
+    },
+    "errors": {
+        "error": "Ha ocurrido un error."
+    },
+    "labels": {
+        "all": "Todos",
+        "allf": "Todas",
+        "active": "ACTIVO",
+        "data": "Datos",
+        "date": "Fecha",
+        "dateInit": "Fecha Inicio",
+        "dateLoad": "Fecha Carga",
+        "help": "Ayuda",
+        "none": "Ninguno",
+        "nonef": "Ninguna",
+        "status": "Estado",
+        "noOptionsText": "No existen opciones"
+    },
+    "messages": {
+        "resultsNotFount": "No se encontraron resultados disponibles para los filtros aplicados.",
+        "notFiltered": "No se ha realizado ninguna búsqueda.",
+        "loading": "Cargando...",
+        "editUpdateOK": "Actualización exitosa",
+        "editUpdateKO": "No se pudo actualizar el registro"
+    },
+    "print": {
+        "button": "Descargar"
+    },
+    "titles": {
+        "navbar": "Revenue",
+        "currenPrice": "Listado de precios vigentes",
+        "prices": "Precios",
+        "bulkLoad": "Carga masiva",
+        "bulkLoadValidation": "Validación de carga masiva",
+        "blTable": "Archivos subidos recientemente",
+        "logDisplay": "Visualización de los registros",
+        "setState": "Configurar estado",
+        "mlValidation": "Validación Carga masiva"
+    },
+    "subtitles": {
+        "subtitlePrices": "En esta sección podés visualizar los datos de tikets.",
+        "subtitleBulkLoad": "En esta sección podés subir archivos de los datos de tikets.",
+        "subtitleBulkLoadValidation": "En esta sección podés visualizar y generar precios de los registros.",
+        "subtitleHelperText": "Descarga el modelo de plantilla CSV",
+        "subtitleSetState": "Seleccionalos para cambiar su estado",
+        "subtitleValidation": "En esta sección podés visualizar y generar precios de los registros."
+    },
+    "formFilter": {
+        "career": "Carrera",
+        "cau": "CAU",
+        "modality": "Modalidad",
+        "period": "Período académico",
+        "tariff": "Arancel",
+        "ticket": "Ticket",
+        "typeStudent": "Tipo de estudiante",
+        "all": "Todos",
+        "id": "ID CSV",
+        "file": "Archivo",
+        "date": "Fecha",
+        "cursando": "Cursado",
+        "status": "Estado",
+        "student": "Estudiante",
+        "studentEntrance": "I - Inscripto",
+        "studentReEntering": "RI - Reinscripto"
+    },
+    "formEdit": {
+        "title": "Editar registro",
+        "idCSV": "ID CSV",
+        "career": "Carrera",
+        "date": "Fecha",
+        "modality": "Modalidad",
+        "cau": "CAU",
+        "period": "Período académico",
+        "porcentage": "Porcentaje",
+        "tariff": "Arancel",
+        "ticket": "Ticket",
+        "count": "Cant. de materias",
+        "turno": "Turno cursado",
+        "typeStudent": "Tipo de estudiante",
+        "studentEntrance": "I - Inscripto",
+        "studentReEntering": "RI - Reinscripto",
+        "price": "Precio"
+    },
+    "tableCell": {
+        "csv": "CSV",
+        "career": "Carrera",
+        "cau": "CAU",
+        "modality": "Tipo de modalidad",
+        "period": "Período académico",
+        "tariff": "Arancel",
+        "ticket": "Ticket",
+        "Shift": "Turno cursado",
+        "typeStudent": "Tipo de estudiante",
+        "price": "Precio",
+        "registrationData": "Datos de registro",
+        "date": "Fecha",
+        "idArticle": "ID",
+        "modalityDes": "Modalidad",
+        "percentage": "Porcentaje",
+        "numberSubjects": "Cantidad de materias",
+        "tID": "ID",
+        "tFileName": "Nombre del archivo",
+        "tUser": "Usuario",
+        "tDate": "Fecha",
+        "status": "Estado",
+        "vID": "ID",
+        "vArchive": "Archivo",
+        "vPending": "Registros pendientes",
+        "vDate": "Fecha",
+        "vUser": "Usuario"
+    },
+    "tooltips": {
+        "editLog": "Editar",
+        "vVisualize": "Visualizar",
+        "vPrices": "Generar precios"
+    }
+}

@@ -1,0 +1,152 @@
+.form__fullWidth {
+    width: 100%;
+}
+
+.form__controlFullWidth {
+    width: 100%;
+}
+
+.form__control {
+    margin: 0px 10px 0px 10px !important;
+}
+
+// for material-ui equals ng-ui-kit-----------------------
+.form__matselect {
+    // margin-bottom: 10px !important;
+    label {
+        font-size: unset !important;
+        color: #999;
+        font-weight: unset;
+        background-color: white;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+    .MuiInputBase-root {
+        font-size: unset;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+        fieldset {
+            border: 1px solid #e0e0e0;
+        }
+
+        input {
+            color: rgba(0, 0, 0, 0.42);
+        }
+        .MuiSelect-iconOpen {
+            color: var(--bit-color-primary, #00a98f);
+        }
+    }
+}
+
+.cdk-overlay-container .cdk-overlay-connected-position-bounding-box .cdk-overlay-pane {
+    transform: translateX(-20px) !important;
+}
+.MuiModal-root .MuiPaper-root .MuiList-root {
+    max-height: 200px !important;
+}
+
+#rmt-programCreateDecanSelect {
+    color: #999 !important;
+}
+
+.MuiOutlinedInput-root
+    .MuiInputBase-root
+    .MuiInputBase-colorPrimary
+    .MuiInputBase-fullWidth
+    .MuiInputBase-formControl
+    .MuiInputBase-adornedEnd
+    .MuiAutocomplete-inputRoot
+    .css-cztl7q-MuiInputBase-root-MuiOutlinedInput-root {
+    height: 38px !important;
+    input {
+        padding: 0px 4px 7.5px 6px !important;
+    }
+}
+.form__matAutocomplete {
+    .MuiInputBase-root {
+        height: 38px !important;
+        background-color: white;
+        input {
+            padding: 0px 4px 7.5px 6px !important;
+        }
+    }
+    .MuiAutocomplete-root {
+        width: unset;
+    }
+    margin-bottom: 10px !important;
+    label {
+        font-size: unset !important;
+        color: #999;
+        font-weight: unset;
+        padding-left: 4px;
+        padding-right: 4px;
+        margin-top: -6px !important;
+    }
+    .MuiInputLabel-shrink {
+        margin-top: 2px !important;
+    }
+    .MuiInputBase-root {
+        font-size: unset;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+        fieldset {
+            border: 1px solid #e0e0e0;
+        }
+
+        input {
+            color: rgba(0, 0, 0, 0.42);
+        }
+    }
+}
+.form__matAutocompleteMultiple {
+    .MuiInputBase-root {
+        background-color: white;
+        input {
+            padding: 0px 4px 7.5px 6px !important;
+        }
+    }
+    .MuiAutocomplete-root {
+        width: unset;
+    }
+    margin-bottom: 10px !important;
+    label {
+        font-size: unset !important;
+        color: #999;
+        font-weight: unset;
+        padding-left: 4px;
+        padding-right: 4px;
+        padding-top: 3px !important;
+        margin-top: -6px !important;
+    }
+    .MuiInputLabel-shrink {
+        margin-top: 2px !important;
+    }
+    .MuiInputBase-root {
+        font-size: unset;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+        fieldset {
+            border: 1px solid #e0e0e0;
+        }
+
+        input {
+            color: rgba(0, 0, 0, 0.42);
+        }
+    }
+}
+// -------------------------------------------------------
+
+.form__line {
+    display: grid;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form__line-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.form__line-2 {
+    grid-template-columns: 1fr 1fr;
+}
+
+.mat-select-panel {
+    z-index: 1055;
+}

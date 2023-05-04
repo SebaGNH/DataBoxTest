@@ -1,0 +1,206 @@
+@import './components/layout/layout.scss';
+@import './components/modules/addCourses.scss';
+@import './components/modules/addCourseProgram.scss';
+@import './components/modules/configCourse.scss';
+@import './components/modules/createSyllabus.scss';
+@import './components/modules/filterProgram.scss';
+@import './components/modules/general.scss';
+@import './components/modules/table.scss';
+@import './components/shared/slide.scss';
+@import './components/shared/info.scss';
+@import './components/shared/card.scss';
+@import './components/shared/form.scss';
+@import './components/shared/modal.scss';
+@import './colors.scss';
+
+.module_title {
+    font-weight: 600;
+    color: map-get($color-map, $key: primary);
+}
+
+.required-field {
+    margin: 16px 0px 0px 0px;
+    font-size: 10px;
+    color: map-get($color-map, $key: muted);
+}
+
+.m1 {
+    margin: 5px !important;
+}
+
+.m2 {
+    margin: 20px !important;
+}
+
+.p2 {
+    padding: 20px !important;
+}
+
+.p1r {
+    padding-right: 1rem;
+}
+
+hr {
+    margin-top: 2px;
+    margin-bottom: 5px;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.row_separator {
+    width: 1px;
+    height: 80%;
+    background-color: map-get($color-map, $key: gray);
+    display: inline-block;
+    margin: 0 12px;
+}
+
+.flex_row {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+}
+
+.link {
+    font-size: 13px;
+    margin: 8px;
+    display: block;
+    span {
+        cursor: pointer;
+        &:hover {
+            color: map-get($color-map, $key: primary);
+        }
+    }
+}
+
+.border_bottom {
+    border-bottom: 1px solid map-get($color-map, border);
+    margin: 5px 0px 5px 0px;
+}
+
+.border_top {
+    border-top: 1px solid map-get($color-map, border);
+    margin: 5px 0px 5px 0px;
+}
+
+.tabs__container {
+    font-size: 5px !important;
+    display: flex;
+    align-items: center;
+}
+
+// Titles
+
+@mixin title {
+    font-family: Montserrat, sans-serif !important;
+    font-weight: bold !important;
+    color: #222 !important;
+}
+
+.title__h1 {
+    @include title;
+    font-size: 24px !important;
+}
+
+.title__h2 {
+    @include title;
+    font-size: 20px !important;
+}
+
+.title__h3 {
+    @include title;
+    font-size: 18px !important;
+}
+
+.title__h4 {
+    @include title;
+    font-size: 16px !important;
+}
+
+.title__h5 {
+    @include title;
+    font-size: 14px !important;
+}
+
+.title__h6 {
+    @include title;
+    font-size: 12px !important;
+}
+
+// Text
+
+@mixin body {
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 400 !important;
+    color: #333 !important;
+}
+
+@mixin button {
+    font-family: Montserrat, sans-serif !important;
+    font-weight: 500 !important;
+    color: #222 !important;
+}
+
+.text__body1 {
+    @include body;
+    font-size: 16px !important;
+}
+
+.text__body2 {
+    @include body;
+    font-size: 14px !important;
+}
+
+.text__button {
+    @include button;
+    font-size: 16px !important;
+}
+
+.text__button--small {
+    @include button;
+    font-size: 14px !important;
+}
+
+.text__chip {
+    @include button;
+    font-size: 12px !important;
+}
+
+.text__caption {
+    @include body;
+    font-size: 12px !important;
+}
+
+.text__overline {
+    @include body;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    text-transform: uppercase !important;
+    color: #666 !important;
+}
+
+// Buttons
+
+.button__ui-kit {
+    border-radius: 21px !important;
+}
+
+.button__ui-kit__delete {
+    padding: 0px !important;
+    border-radius: 90% !important;
+    height: 35px !important;
+    min-width: 35px !important;
+    text-align: center !important;
+}
+
+body .segment__button__ui__align {
+    text-align: center;
+}
+
+.Navbar__Help {
+    color: #46aa8f;
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-skip-ink: all;
+}

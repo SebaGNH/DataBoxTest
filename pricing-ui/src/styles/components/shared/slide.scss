@@ -1,0 +1,40 @@
+.slide__container {
+    position: fixed;
+    width: 80vw;
+    height: 100vh;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    z-index: 10;
+
+    overflow-y: auto;
+}
+
+.slide__header {
+    width: 100%;
+    display: flex;
+    padding: 5px 20px 5px 5px;
+    align-items: center;
+    border-bottom: 1px solid map-get($color-map, $key: border);
+    justify-content: space-between;
+
+    .slide__titleContainer {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.slide__title {
+    font-weight: 600;
+    color: map-get($color-map, $key: primary);
+    margin-left: 12px;
+}
+
+.slide__loading {
+    display: flex;
+    justify-content: center;
+}
+
+.slide__content {
+    padding: 1rem;
+}

@@ -1,0 +1,269 @@
+@import '../../colors.scss';
+
+.pb-5,
+.py-5 {
+    padding-bottom: 3rem !important;
+}
+
+.pt-5,
+.py-5 {
+    padding-top: 3rem !important;
+}
+
+.mb-5,
+.my-5 {
+    margin-bottom: 3rem !important;
+}
+
+.mt-5,
+.my-5 {
+    margin-top: 3rem !important;
+}
+
+.pb-5,
+.py-5 {
+    padding-bottom: 3rem !important;
+}
+
+.pt-5,
+.py-5 {
+    padding-top: 3rem !important;
+}
+
+.mb-5,
+.my-5 {
+    margin-bottom: 3rem !important;
+}
+
+.mt-5,
+.my-5 {
+    margin-top: 3rem !important;
+}
+
+.container,
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.pb-5,
+.py-5 {
+    padding-bottom: 3rem !important;
+}
+
+.pt-5,
+.py-5 {
+    padding-top: 3rem !important;
+}
+
+.mb-5,
+.my-5 {
+    margin-bottom: 3rem !important;
+}
+
+.mt-5,
+.my-5 {
+    margin-top: 3rem !important;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 768px) {
+    .container,
+    .container-md,
+    .container-sm {
+        max-width: 1100px;
+    }
+}
+
+/* FLEX STYLES */
+
+.col {
+    margin: 5px 0;
+    text-align: left;
+}
+
+/* GENERAL GRID STYLES */
+
+.col {
+    flex-basis: 100%;
+}
+
+@media screen and (min-width: 980px) {
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .col {
+        flex: 1;
+    }
+
+    .col-05 {
+        flex: 0.5;
+    }
+
+    .col-10 {
+        flex: 1;
+    }
+
+    .col-15 {
+        flex: 1.5;
+    }
+
+    .col-20 {
+        flex: 2;
+    }
+
+    .col-25 {
+        flex: 2.5;
+    }
+
+    .col-30 {
+        flex: 3;
+    }
+
+    .col-35 {
+        flex: 3.5;
+    }
+
+    .col-40 {
+        flex: 4;
+    }
+
+    .col-45 {
+        flex: 4.5;
+    }
+
+    .col-50 {
+        flex: 5;
+    }
+
+    .col-55 {
+        flex: 5.5;
+    }
+
+    .col-60 {
+        flex: 6;
+    }
+
+    .col-65 {
+        flex: 6.5;
+    }
+
+    .col-70 {
+        flex: 7;
+    }
+
+    .col-75 {
+        flex: 7.5;
+    }
+
+    .col-80 {
+        flex: 8;
+    }
+
+    .col-85 {
+        flex: 8.5;
+    }
+
+    .col-90 {
+        flex: 9;
+    }
+
+    .col-95 {
+        flex: 9.5;
+    }
+}
+
+.p-3 {
+    padding: 1rem !important;
+}
+
+.mt-2 {
+    margin-top: 2rem !important;
+}
+
+.mt-1 {
+    margin-top: 0.8rem !important;
+}
+
+.mt-1_5 {
+    margin-top: 1.5rem !important;
+}
+
+.mt-0 {
+    margin-top: 0 !important;
+}
+
+.flex-align-items_center {
+    display: flex;
+    align-items: center;
+}
+
+.flex-justify-content_center {
+    display: flex;
+    justify-content: center;
+}
+
+/***/
+
+.accordion {
+    width: 100%;
+    margin: 0 auto;
+    background: #fff;
+    overflow: hidden;
+    transition: height 0.3s ease;
+    margin-bottom: 0.1em;
+    box-sizing: border-box;
+}
+
+.accordion .accordion_content {
+    padding: 20px;
+}
+
+.accordion .accordion_content .accordion_item {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 500px) {
+    .accordion {
+        height: 90px;
+    }
+}
+
+.title-detail-classroom {
+    text-align: left;
+    letter-spacing: 0px;
+    color: #006c5b;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.subtitle-detail-1 {
+    text-align: left;
+    letter-spacing: 0px;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.content-item-space-between {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}

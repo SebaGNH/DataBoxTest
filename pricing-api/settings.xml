@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.org/xsd/settings-1.1.0.xsd">
+
+  <interactiveMode>false</interactiveMode>
+  
+  <pluginGroups>
+    <pluginGroup>org.sonarsource.scanner.maven</pluginGroup>
+    <pluginGroup>org.jboss.as.plugins</pluginGroup>
+  </pluginGroups>
+
+  <activeProfiles>
+    <activeProfile>maven-ues21</activeProfile>
+  </activeProfiles>
+
+  <servers>
+    <server>
+     <id>maven-ues21</id>
+     <username>depread</username>
+     <password>hE7GtpbyqyC5fKHN</password>
+     <configuration/>
+   </server>
+  </servers>
+
+  <mirrors>
+    <mirror>
+      <id>nexus</id>
+      <mirrorOf>*,!maven-ues21</mirrorOf>
+      <url>https://nexus.uesiglo21.edu.ar/repository/maven-public/</url>
+    </mirror>
+    <mirror>
+      <id>maven-ues21</id>
+      <mirrorOf>*</mirrorOf>
+      <url>https://nexus.uesiglo21.edu.ar/repository/maven-ues21/</url>
+    </mirror>
+  </mirrors>
+
+  <profiles>
+    <profile>
+      <id>maven-ues21</id>
+      <repositories>
+        <repository>
+          <id>maven-ues21</id>
+          <url>https://nexus.uesiglo21.edu.ar/repository/maven-ues21</url>
+        </repository>
+        <repository>
+          <id>maven-public</id>
+          <url>https://nexus.uesiglo21.edu.ar/repository/maven-public/</url>
+        </repository>
+      </repositories>
+      <pluginRepositories>
+        <pluginRepository>
+          <id>maven-public</id>
+          <url>https://nexus.uesiglo21.edu.ar/repository/maven-public/</url>
+        </pluginRepository>
+      </pluginRepositories>
+      <properties>
+        <sonar.host.url>
+          https://sonarqube.uesiglo21.edu.ar
+        </sonar.host.url>
+      </properties>
+    </profile>
+
+    <profile>
+      <id>maven-ues21-staging</id>
+      <repositories>
+        <repository>
+          <id>maven-ues21-staging</id>
+          <url>https://nexus.uesiglo21.edu.ar/repository/maven-ues21-staging</url>
+        </repository>
+        <repository>
+          <id>maven-public</id>
+          <url>https://nexus.uesiglo21.edu.ar/repository/maven-public</url>
+        </repository>
+      </repositories>
+      <pluginRepositories>
+        <pluginRepository>
+          <id>maven-public</id>
+          <url>https://nexus.uesiglo21.edu.ar/repository/maven-public</url>
+        </pluginRepository>
+      </pluginRepositories>
+      <properties>
+        <sonar.host.url>
+          https://sonarqube.uesiglo21.edu.ar
+        </sonar.host.url>
+      </properties>
+    </profile>
+
+    <profile>
+      <id>maven-ues21-qa</id>
+      <repositories>
+        <repository>
+          <id>maven-ues21-qa</id>
+          <url>https://nexus.uesiglo21.edu.ar/repository/maven-ues21-qa</url>
+        </repository>
+        <repository>
+          <id>maven-public</id>
+          <url>https://nexus.uesiglo21.edu.ar/repository/maven-public</url>
+        </repository>
+      </repositories>
+      <pluginRepositories>
+        <pluginRepository>
+          <id>maven-public</id>
+          <url>https://nexus.uesiglo21.edu.ar/repository/maven-public</url>
+        </pluginRepository>
+      </pluginRepositories>
+      <properties>
+        <sonar.host.url>
+          https://sonarqube.uesiglo21.edu.ar
+        </sonar.host.url>
+      </properties>
+    </profile>
+
+  </profiles>
+
+</settings>
+
